@@ -1,0 +1,72 @@
+======================================================================
+CLINICAL GUIDELINE: Type 2 Diabetes Mellitus (T2DM) Uncomplicated
+ICD-10 CODES: E11.9 (Type 2 diabetes mellitus without complications)
+======================================================================
+PATHOPHYSIOLOGY: 
+Type 2 diabetes is characterized by insulin resistance in peripheral tissues (muscle, fat, liver) combined with a progressive decline in pancreatic beta-cell insulin secretion. This leads to chronic hyperglycemia.
+
+PRESENTATION: 
+Often asymptomatic in early stages. Classic symptoms include polyuria (frequent urination), polydipsia (excessive thirst), polyphagia (excessive hunger), unexplained weight loss, blurred vision, and fatigue. 
+
+DIAGNOSTIC CRITERIA:
+- Fasting Plasma Glucose (FPG) >= 126 mg/dL (7.0 mmol/L)
+- 2-hour Plasma Glucose >= 200 mg/dL (11.1 mmol/L) during an OGTT
+- Hemoglobin A1c (HbA1c) >= 6.5% (48 mmol/mol)
+- In a patient with classic symptoms of hyperglycemia or hyperglycemic crisis, a random plasma glucose >= 200 mg/dL (11.1 mmol/L).
+
+TREATMENT PLAN:
+1. Lifestyle modifications: Medical nutrition therapy, weight loss (if indicated), and regular physical activity.
+2. First-line pharmacotherapy: Metformin is the preferred initial oral agent unless contraindicated (e.g., severe renal impairment, eGFR < 30).
+3. If HbA1c target is not achieved after 3 months, consider adding a GLP-1 receptor agonist, SGLT2 inhibitor, DPP-4 inhibitor, or basal insulin depending on cardiovascular/renal comorbidities.
+
+RED FLAGS:
+Blood glucose > 600 mg/dL with severe dehydration and altered mental status suggests Hyperosmolar Hyperglycemic State (HHS), requiring immediate emergency intervention (ICD-10: E11.00).
+
+======================================================================
+CLINICAL GUIDELINE: Acute Appendicitis
+ICD-10 CODES: K35.80 (Unspecified acute appendicitis)
+======================================================================
+PATHOPHYSIOLOGY:
+Obstruction of the appendiceal lumen, typically by a fecalith, lymphoid hyperplasia, or rarely a tumor. This obstruction leads to fluid stasis, bacterial overgrowth, inflammation, ischemia, and potential perforation or rupture.
+
+PRESENTATION:
+Classic presentation begins with vague, dull periumbilical pain that migrates to the right lower quadrant (RLQ) over 12-24 hours. Accompanied by anorexia, nausea, vomiting, and low-grade fever. 
+Physical exam reveals RLQ tenderness, specifically at McBurney's point. Rebound tenderness, guarding, and positive Rovsing's, Psoas, or Obturator signs may be present indicating peritoneal irritation.
+
+DIAGNOSTIC CRITERIA:
+- Clinical evaluation (Alvarado score).
+- Laboratory: Mild to moderate leukocytosis (elevated WBC count) with a left shift. CRP may be elevated.
+- Imaging: CT abdomen/pelvis with IV contrast is the most sensitive and specific modality in adults. Ultrasound is preferred in children and pregnant patients to avoid radiation.
+
+TREATMENT PLAN:
+1. NPO (nothing by mouth), IV fluids, and analgesia.
+2. Broad-spectrum intravenous antibiotics (e.g., Ceftriaxone + Metronidazole or Piperacillin-Tazobactam) prior to surgery.
+3. Surgical intervention: Laparoscopic appendectomy is the definitive treatment.
+
+RED FLAGS:
+Sudden relief of pain followed by worsening diffuse abdominal pain, high fever, and rigid abdomen strongly suggests appendiceal rupture/perforation leading to peritonitis (ICD-10: K35.2).
+
+======================================================================
+CLINICAL GUIDELINE: Community-Acquired Pneumonia (CAP) in Adults
+ICD-10 CODES: J15.9 (Unspecified bacterial pneumonia)
+======================================================================
+PATHOPHYSIOLOGY:
+Acute infection of the pulmonary parenchyma acquired outside of a healthcare setting. Most commonly caused by Streptococcus pneumoniae, followed by atypical pathogens (Mycoplasma pneumoniae, Chlamydophila pneumoniae) and respiratory viruses.
+
+PRESENTATION:
+Cough (often productive with purulent sputum), fever, chills, dyspnea (shortness of breath), and pleuritic chest pain. 
+Physical exam may reveal tachypnea, tachycardia, hypoxia, and lung auscultation findings such as crackles/rales, bronchial breath sounds, or dullness to percussion over the consolidated area.
+
+DIAGNOSTIC CRITERIA:
+- Clinical symptoms compatible with pneumonia.
+- Chest Radiograph (CXR): Presence of a new pulmonary infiltrate or consolidation is the gold standard for diagnosis.
+- Severity Assessment: Use CURB-65 or Pneumonia Severity Index (PSI) to determine inpatient vs. outpatient management.
+
+TREATMENT PLAN:
+OUTPATIENT (Healthy, no comorbidities):
+- Amoxicillin OR a Macrolide (Azithromycin) OR Doxycycline.
+OUTPATIENT (With comorbidities like COPD, Diabetes, Heart Failure):
+- Amoxicillin/Clavulanate (Augmentin) PLUS a Macrolide OR Respiratory Fluoroquinolone (Levofloxacin).
+
+RED FLAGS:
+Respiratory rate > 30 breaths/min, systolic BP < 90 mmHg, multilobar infiltrates, or oxygen saturation < 90% on room air indicates severe CAP requiring immediate hospital admission and potentially ICU level care.

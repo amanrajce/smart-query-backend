@@ -8,7 +8,8 @@ export const ENV = {
     GROQ_API_KEY: process.env.GROQ_API_KEY || '',
     MISTRAL_API_KEY: process.env.MISTRAL_API_KEY || '',
     OPENROUTER_API_KEY: process.env.OPENROUTER_API_KEY || '', //Deepseak via OpenRouter
-    NODE_ENV: process.env.NODE_ENV || 'development'
+    NODE_ENV: process.env.NODE_ENV || 'development',
+    PINECONE_API_KEY: process.env.PINECONE_API_KEY || '',
 };
 
 if (!ENV.GEMINI_API_KEY && !ENV.GROQ_API_KEY) {

@@ -4,11 +4,17 @@ import { ModelResponse, JudgeEvaluation } from '../types';
 
 export const handleChat = async (req: Request, res: Response): Promise<void> => {
     try {
-        const { message, modelProvider } = req.body;
-        if (!message) return res.status(400).json({ error: "Message is required." }) as any;
-        const aiResponse = await generateChatResponse(message, modelProvider);
+        const { message, modelProvider, role } = req.body; // Extracts role
+        if (!message) {
+            res.status(400).json({ error: "Message is required." });
+            return;
+        }
+        
+        // Passes the role to the service
+        const aiResponse = await generateChatResponse(message, modelProvider, role);
         res.status(200).json({ reply: aiResponse, provider: modelProvider || 'gemini' });
     } catch (error) {
+        console.error("Chat Error:", error);
         res.status(500).json({ error: "Internal server error." });
     }
 }
@@ -16,20 +22,21 @@ export const handleChat = async (req: Request, res: Response): Promise<void> => 
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 export const compareModels = async (req: Request, res: Response): Promise<void> => {
-  const { prompt } = req.body;
+  const { prompt, role } = req.body; // Extracts role
 
   try {
-    // 🚦 THE 6-MODEL RACE: Perfectly balanced across 3 different corporate infrastructures
+    // 🚦 THE 6-MODEL RACE: Passing the role into every single model
     const results = await Promise.allSettled([
-      generateChatResponse(prompt, 'groq'),                             // 0.0s (Groq Llama 3.3)
-      delay(100).then(() => generateChatResponse(prompt, 'gemini')),    // 0.1s (Google Gemini 2.5) ⚡️ NEW
-      delay(300).then(() => generateChatResponse(prompt, 'mistral')),   // 0.3s (Mistral Native)
-      delay(600).then(() => generateChatResponse(prompt, 'llama8b')),   // 0.6s (Groq Llama 3.1 8B)
-      delay(1500).then(() => generateChatResponse(prompt, 'qwen3')),    // 1.5s (OpenRouter Qwen)
-      delay(3000).then(() => generateChatResponse(prompt, 'deepseek'))  // 3.0s (OpenRouter DeepSeek)
+      generateChatResponse(prompt, 'groq', role),                             
+      delay(100).then(() => generateChatResponse(prompt, 'gemini', role)),    
+      delay(300).then(() => generateChatResponse(prompt, 'mistral', role)),   
+      delay(600).then(() => generateChatResponse(prompt, 'llama8b', role)),   
+      delay(1500).then(() => generateChatResponse(prompt, 'qwen3', role)),    
+      delay(3000).then(() => generateChatResponse(prompt, 'deepseek', role))  
     ]);
 
     const validAnswers: ModelResponse[] = [];
+    
     // 🚨 IMPORTANT: This array must exactly match the 6 promises above
     const modelNames = [
         'Llama 3.3 70B', 
